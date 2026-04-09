@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Title</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(0, 0, 0);
+    }
+
+    .fade-text {
+      font-size: 3em;
+      color: white;
+      opacity: 0;
+      animation: fadeInOut 5s ease-in-out forwards;
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      20% { opacity: 0.5; }
+      50% { opacity: 1; }
+      80% { opacity: 0.5; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="fade-text">A NETFLIX ORIGINAL SERIES</div>
+</body>
+</html>
